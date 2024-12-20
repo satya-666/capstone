@@ -183,6 +183,7 @@ body{
 .satya{
     width: 1344px;
     height: 200px;
+    /* border: 3px solid red; */
     display: flex;
     flex-direction: row;
     margin: 30px 40px 30px 70px;
@@ -313,6 +314,16 @@ body{
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 }
+/* img{
+    height: 900px;
+    width: 700px;
+    width: 1028px;
+    height: 1028px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+} */
 
 .reddd{
     width: 1500px;
@@ -470,13 +481,13 @@ hr {
     height: 100px;
     border: 0; 
     background-color: black; 
-
+    /* transform: rotate(90deg); */
 }
 .sim{
     height: 100px;
     width: 50px;
     margin-right: 10px;
-
+    /* margin: 4px 10px 4px 70px; */
 }
 .kim{
     height: 100px;
@@ -579,7 +590,7 @@ font: 400 20px/1.2 'Roboto Mono', sans-serif;
 cursor: pointer;
 }
 
-/* @media (max-width: 991px) {
+@media (max-width: 991px) {
 .portfolio-section {
   padding: 0 20px 100px;
 }
@@ -609,4 +620,4 @@ input{
 text-align: center;
 font-size: xx-large;
 
-} */
+}
