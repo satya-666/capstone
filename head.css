@@ -377,14 +377,14 @@ body{
 .wrapper_child1{
     margin-left:60px ;
     width: 1260px;
-    /* height: 52px; */
+
 }
 .wrapper_child2{
     height: 250px;
     width: 1344px;
     text-align: center;
     align-items: center;
-    /* border: 1px solid #ddd; */
+
     display: flex;
     overflow-x: auto;
 
