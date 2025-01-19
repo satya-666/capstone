@@ -123,6 +123,8 @@ body{
     width: 1344px;
     height: 250px;
     /* border: 2px solid red; */
+    /* border: 2px solid red; */
+    
     display: flex;
     flex-direction: row;
     margin: 30px 40px 30px 50px;
