@@ -369,38 +369,39 @@ body{
     transform: scale(1.02); 
 }
 .wrapper{
-    margin: 30px 40px 30px 70px;
-    height: 412px;
-    width: 1344px;
-
+    width: 100%;
+    max-width: 1344px;
+    margin: 30px auto;
+    overflow: hidden;
+    padding: 0 20px;
 }
 .wrapper_child1{
-    margin-left:60px ;
-    width: 1260px;
-
+    margin-bottom: 40px;
+    text-align: center;
 }
 .wrapper_child2{
-    height: 250px;
-    width: 1344px;
-    text-align: center;
-    align-items: center;
-
     display: flex;
+    flex-direction: row;
     overflow-x: auto;
-
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 0;
+    gap: 20px;
 }
 .wrapper_child2 .itemmm{
     min-width: 300px;
     height: 220px;
-    /* line-height: 11px; */
-    text-align: center;
-    margin-right: 20px;
-    margin-top: 5px;
+    flex: 0 0 auto;
     border: 2px solid black;
     border-radius: 15px;
+    transition: transform 0.3s ease;
 }
 .wrapper_child2::-webkit-scrollbar{
-    width: 0;
+    display: none;
+}
+.wrapper_child2 {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 #clients{
     font-family: Bebas Neue;
@@ -618,4 +619,202 @@ input{
 text-align: center;
 font-size: xx-large;
 
+}
+
+/* Responsive Design Rules */
+@media screen and (max-width: 1400px) {
+    .photo {
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+    }
+    
+    .pareent {
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    .local {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+    
+    .box {
+        width: calc(33.33% - 50px);
+        margin: 25px;
+    }
+    
+    .conteeent {
+        width: 100%;
+    }
+    
+    #tasvir {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .heading {
+        font-size: 80px;
+        line-height: 90px;
+    }
+    
+    .box {
+        width: calc(50% - 50px);
+    }
+    
+    .teeext {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        margin: 30px auto;
+    }
+    
+    .spaaace, .pooortfolio {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .lotus {
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    .real {
+        width: 100%;
+    }
+    
+    .your {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .logo {
+        margin: 10px 0;
+    }
+    
+    .right-section {
+        width: 100%;
+        margin: 10px 0;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .heading {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    
+    .box {
+        width: calc(100% - 50px);
+    }
+    
+    .wrapper_child2 {
+        padding: 20px;
+    }
+    
+    .itemmm {
+        width: 100%;
+    }
+    
+    .wrapper {
+        padding: 0 10px;
+    }
+    
+    .wrapper_child2 .itemmm {
+        min-width: 280px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding-top: 120px;
+    }
+    
+    .heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .right-section {
+        font-size: 20px;
+    }
+    
+    .cococo {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    .your {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    
+    .contact-form {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .input-group {
+        gap: 10px;
+    }
+    
+    .form-input {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .wrapper_child2 .itemmm {
+        min-width: 260px;
+    }
+}
+
+/* Fix for fixed header on mobile */
+@media screen and (max-width: 768px) {
+    .header {
+        position: absolute;
+    }
+}
+
+/* Ensure images don't overflow their containers */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add smooth transitions for better user experience */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Fix for the review section */
+/* .wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper_child2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    overflow-x: hidden;
+} */
+
+/* Fix for contact form responsiveness */
+.father-contact {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
 }
